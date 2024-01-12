@@ -1,6 +1,6 @@
 const router = require('express').Router();
 
-router.get('/', (req, res) => { res.send('Hello World')});
+router.get('/', (req, res) => { res.send('My Contacts')});
 
 router.use('/contacts', require('./contacts'));
 

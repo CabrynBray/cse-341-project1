@@ -8,6 +8,7 @@
   "host": "project1-c3ss.onrender.com",
   "basePath": "/",
   "schemes": [
+    "http",
     "https"
   ],
   "paths": {
@@ -26,9 +27,6 @@
     },
     "/contacts/": {
       "get": {
-        "tags": [
-          "contacts"
-        ],
         "description": "",
         "produces": [
           "application/json"
@@ -40,9 +38,6 @@
         }
       },
       "post": {
-        "tags": [
-          "contacts"
-        ],
         "description": "",
         "parameters": [
           {
@@ -82,9 +77,6 @@
     },
     "/contacts/{id}": {
       "get": {
-        "tags": [
-          "contacts"
-        ],
         "description": "",
         "produces": [
           "application/json"
@@ -104,9 +96,6 @@
         }
       },
       "put": {
-        "tags": [
-          "contacts"
-        ],
         "description": "",
         "parameters": [
           {
@@ -121,16 +110,19 @@
             "schema": {
               "type": "object",
               "properties": {
-                "username": {
+                "firstName": {
+                  "example": "any"
+                },
+                "lastName": {
                   "example": "any"
                 },
                 "email": {
                   "example": "any"
                 },
-                "name": {
+                "favoriteColor": {
                   "example": "any"
                 },
-                "ipaddress": {
+                "birthday": {
                   "example": "any"
                 }
               }
@@ -147,9 +139,6 @@
         }
       },
       "delete": {
-        "tags": [
-          "contacts"
-        ],
         "description": "",
         "parameters": [
           {

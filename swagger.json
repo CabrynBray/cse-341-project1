@@ -8,7 +8,6 @@
   "host": "project1-c3ss.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
     "https"
   ],
   "paths": {

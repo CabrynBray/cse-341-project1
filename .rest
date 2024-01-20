@@ -1,4 +1,71 @@
+### Published link.
 GET https://project1-c3ss.onrender.com/contacts HTTP/1.1
 
+###  Returns Welcome Message
+GET https://project1-c3ss.onrender.com
 
-GET http://localhost:3000/contacts
+### Local Host Returns Welcome Message
+GET http://localhost:3001/
+
+### Returns all the contacts
+GET https://project1-c3ss.onrender.com/contacts HTTP/1.1
+### Local Host Returns all the contacts.
+GET http://localhost:3001/contacts
+
+### Returns a contact by their _id.
+GET https://project1-c3ss.onrender.com/contacts/659fc4d27af736ff4f9b2472 HTTP/1.1
+
+### Local Host Returns a contact by their _id. 
+GET http://localhost:3001/contacts/659fc4d27af736ff4f9b2472
+
+### Inserts a new contact into our database
+POST https://project1-c3ss.onrender.com/contacts/ HTTP/1.1
+Content-Type: application/json
+{
+    "firstname": "Anton", 
+    "lastname": "Van Tonder", 
+    "email": "Anton@byui.edu", 
+    "favoriteColor": "Blue", 
+    "birthdate": "12 March"
+}
+
+### Local Host Inserts a new contact into our database
+POST http://localhost:3001/contacts/ HTTP/1.1 
+Content-Type: application/json
+{
+    "firstname": "Anton", 
+    "lastname": "Van Tonder", 
+    "email": "Anton@byui.edu", 
+    "favoriteColor": "Blue", 
+    "birthdate": "12 March"
+}
+
+### Updates a contact by their _id.
+PUT https://project1-c3ss.onrender.com/contacts/659fc2597af736ff4f9b2470 HTTP/1.1
+Content-Type: application/json
+{
+"_id": "659fc2597af736ff4f9b2470",
+"firstName": "Douglas",
+"lastName": "Bray",
+"email": "Doughlas@saintgroup.com",
+"favoriteColor": "green",
+"birthday": "25 June"
+}
+
+### Local Host Updates a contact by their _id.
+PUT http://localhost:3001/contacts/659fc2597af736ff4f9b2470 HTTP/1.1
+Content-Type: application/json
+{
+"_id": "659fc2597af736ff4f9b2470",
+"firstName": "Douglas",
+"lastName": "Bray",
+"email": "Doughlas@saintgroup.com",
+"favoriteColor": "green",
+"birthday": "25 June"
+}
+
+### Deletes contact by their _id
+DELETE https://project1-c3ss.onrender.com/contacts/65aa4c263935283b52322c41
+
+### Local Host Deletes contact by their _id
+DELETE http://localhost:3001/contacts/65aa4c263935283b52322c41

@@ -1,6 +1,9 @@
 ### Published link.
 GET https://project1-c3ss.onrender.com/contacts HTTP/1.1
 
+### Get the api-swagger
+GET https://project1-c3ss.onrender.com/api-docs
+
 ###  Returns Welcome Message
 GET https://project1-c3ss.onrender.com
 
